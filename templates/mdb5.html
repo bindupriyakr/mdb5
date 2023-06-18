@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title> mdb5 am parent</title>
+    <link rel="stylesheet" href="{% static 'css/mbd5.css' %}">
+    {% block child %}
+    <title> im child </title>
+    {% endblock %}
+</head>
+<body>
+    <button type="button" class="btn btn-primary">Button</button>
+
+
+    <script src="{% static 'js/mbd5.js' %}"></script>
+    
+</body>
+</html>
